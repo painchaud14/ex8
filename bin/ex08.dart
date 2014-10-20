@@ -4,7 +4,7 @@ import 'modele.dart';
 
 part 'variable.dart';
 
-ClasserFn(var members) {
+classerFn(var members) {
   print('Les prénoms');
   members.sort((x, y) => x['firstName'].compareTo(y['firstName']));
   for (var j in members) {
@@ -13,7 +13,7 @@ ClasserFn(var members) {
   }
 }
 //#1
-ClasserLn(var members) {
+classerLn(var members) {
   print('Les Noms de famille');
   members.sort((x, y) => x['lastName'].compareTo(y['lastName']));
   for (var j in members) {
@@ -21,7 +21,7 @@ ClasserLn(var members) {
   }
 }
 //
-TrouverLettre(var association, var individuelle) {
+trouverLettre(var association, var individuelle) {
   print('');
   print('Trouver un Membre par sa Lettre: $individuelle');
   for (var i = 0; i < association.length; i++) {
