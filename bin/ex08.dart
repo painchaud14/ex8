@@ -37,11 +37,11 @@ void main() {
 //#1 (dans le main)
   print('#1 association par nom par prénom et par lettre');
   print('Association SG (1)');
-  ClasserFn(associations[0]['members']);
+  classerFn(associations[0]['members']);
   print('');
   print('Association AD (2)');
-  ClasserLn(associations[1]['members']);
-  TrouverLettre(associations, 'S');
+  classerLn(associations[1]['members']);
+  trouverLettre(associations, 'S');
 //#2(complet)
   var membresasso = [];
   var asso = [];
