@@ -1,0 +1,78 @@
+ex08
+
+14/20
+
+Gardez le même projet lorsque vous effectuez une mise à jour d'exercice. 
+
+-2
+pas de lib
+
+la bibliothèque (library) doit être dans le répertoire lib
+library ex08;
+
+8.1
+-1
+classerFn(var members) {
+-->
+classerFn(List members) {
+
+Sort the list of members of a given association first by the last name, 
+THEN by the first name.
+-1 THEN
+
+8.2
+  Membre(String prenom, String nomFamille, String courriel) {
+    this.prenom = prenom;
+    this.nomfamille = nomFamille;
+    this.courriel = courriel;
+  }
+-->
+  Membre(String this.prenom, String this.nomFamille, String this.courriel);
+ 
+class Association {
+ajoutmembre(Membre memb)
+-->
+ajouter(Membre memb) 
+  
+ne utilisez pas print dans les methodes
+
+  enlever(Association association) {
+    for (var a = 0; a < clubmembre.length; a++) {
+      if (clubmembre[a].nom == association.nom) {
+        clubmembre.removeAt(a);
+      }
+    }
+    imprimeclubmembre() {
+      for (var a = 0; a < clubmembre.length; a++) {
+        print(clubmembre[a].toString());
+      }
+    }
+  }
+-1
+imprimeclubmembre() 
+dans 
+enlever(Association association) { ?
+
+  miseajourmembre(String nom, String prenom, String courriel) {
+    for (var a = 0; a < membres.length; a++) {
+      if (membres[a].prenom == prenom && membres[a].nom == nom) {
+        membres[a].courriel = courriel;
+      }
+    }
+    enlevermembre(String courriel) {
+      for (var a = 0; a < membres.length; a++) {
+        if (membres[a].courriel == courriel) {
+          membres[a].removeclubmembre(this);
+          membres.removeAt(a);
+
+        }
+      }
+    }
+  }
+ enlevermembre(String courriel) { 
+ dans 
+ miseajourmembre(String nom, String prenom, String courriel) { ?
+ 
+ -1 (incomplète)
+ Maintain the model by providing additions, removals and updates of entities. 
+ 
